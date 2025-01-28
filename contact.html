@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="vi ewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nico Vece, Web Developer Portfolio" />
+    <link rel="shortcut icon" href="./img/favicon-32x32.png?v=2" />
+    <title>Nico Vece - Web Developer</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="index.html">Nico Vece</a>
+        </h1>
+        <!-- Main navigation -->
+        <nav aria-labelledby="main-navigation">
+            <ul role="menubar">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" aria-label="Link to About me page" role="menuitem">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="menuitem">Work</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h2>Nico Vece</h2>
+            <p>
+                CareerFoundry GmbH<br>
+                Lohmühlenstraße 65<br>
+                12435 Berlin<br>
+                Deutschland<br>
+            </p>
+            <p>
+                Tel <a href="tel:+49 01 2345 6789" aria-label="Link my phone at +49 01 2345 6789">+49 01 2345
+                    6789</a><br>
+                Skype <a href="skype:lisa.gringl.developer">lisa.gringl.developer</a><br>
+                <a href="mailto:lisa@gringldeveloper.com">lisa (at) gringldeveloper (dot) com</a>
+            </p>
+            <form id="contact_form" action="" method="post" class="form">
+                <div class="form__field form__field--text">
+                    <label class="form__label" for="name">Name</label><br>
+                    <input class="form__input form__input--text" type="text" name="name" id="name" required />
+                </div>
+                <div class="form__field form__field--email">
+                    <label class="form__label" for="email">Email</label><br>
+                    <input class="form__input form__input--email" type="email" name="email" id="email"
+                        pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Please provide a valid email address" required />
+                </div>
+                <div class="form__field form__field--tel">
+                    <label class="form__label" for="phone">Phone</label><br>
+                    <input class="form__input form__input--tel" type="tel" id="phone" name="phone" />
+                </div>
+                <div class="form__field form__field--select">
+                    <label class="form__label" for="topic">Topic</label><br>
+                    <select class="form__input form__input--select" name="topic" id="topic">
+                        <option value="">Please select a topic</option>
+                        <option value="hire">I want to hire you</option>
+                        <option value="info">I would love to know more about you</option>
+                        <option value="meeting">I would arrange a meeting</option>
+                        <option value="hi">Just want to say HI!</option>
+                    </select>
+                </div>
+                <div class="form__field form__field--textarea">
+                    <label class="form__label" for="message">Message</label><br>
+                    <textarea class="form__input form__input--textarea" id="message" name="message" maxlength="240"
+                        rows="5" cols="33" required></textarea>
+                </div>
+                <div class="form__field form__field--submit">
+                    <input type="submit" value="Send me a message" />
+                </div>
+            </form>
+            <p>
+                <a href="mailto:lisa@gringldeveloper.com">Contact me</a>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <h3>Find me on</h3>
+        <!-- Secondary navigation -->
+        <nav aria-labelledby="socials-navigation">
+            <ul role="menubar">
+                <li role="presentation">
+                    <a href="#" role="menuitem">
+                        <!-- Github logo -->
+                        <img src="https://placehold.co/30x30" alt="Nico Vece on Github" />
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#" role="menuitem">
+                        <!-- Twitter logo -->
+                        <img src="img/twitter_icon.svg" alt="twitter">
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#" role="menuitem">
+                        <!-- LinkedIn logo -->
+                        <img src="https://placehold.co/30x30" alt="Nico Vece on LinkedIn" />
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
