@@ -7,6 +7,9 @@
     <meta name="vi ewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Nico Vece, Web Developer Portfolio" />
     <link rel="shortcut icon" href="./img/favicon-32x32.png?v=2" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <title>Nico Vece - Web Developer</title>
 </head>
 
@@ -17,18 +20,20 @@
         </h1>
         <!-- Main navigation -->
         <nav aria-labelledby="main-navigation">
-            <ul role="menubar">
+            <ul role="menubar" class="navigation-list">
                 <li role="presentation">
-                    <a href="index.html" role="menuitem">Home</a>
+                    <a href="index.html" role="menuitem"
+                        class="navigation-list__item navigation-list__item--active">Home</a>
                 </li>
                 <li role="presentation">
-                    <a href="about.html" aria-label="Link to About me page" role="menuitem">About</a>
+                    <a href="about.html" aria-label="Link to About me page" role="menuitem"
+                        class="navigation-list__item">About</a>
                 </li>
                 <li role="presentation">
-                    <a href="work.html" role="menuitem">Work</a>
+                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
                 </li>
                 <li role="presentation">
-                    <a href="contact.html" role="menuitem">Contact</a>
+                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -43,6 +48,13 @@
             <h2>My name is Nico Vece.</h2>
             <p>I am a <span>web</span> developer from Italy.</p>
             <a href="#nogo">Cheack out some of my code.</a>
+        </div>
+        <div>
+            <p>
+                <a href="#">Default Link</a>
+                <button type="button">Default Button</button>
+                <button class="button__secondary">Secondary Button</button>
+            </p>
         </div>
     </main>
     <footer>

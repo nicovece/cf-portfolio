@@ -1,0 +1,132 @@
+/*
+I need to investigate further if using @import is better than the link tag in the html file. For sure it is better for maintainability and organization.
+*/
+@import "./modern-normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*
+Colors used
+
+Text Color (Dark Green): #19221D;
+Primary Color (Light green): #7BAA93;
+Primary Color dark (Green): #4a6658;
+Secondary Color (Warm yellow): #F7B200;
+Secondary Color Text (Brownish): #946B00;
+Bacground Color (Lightest Grey): #eee;
+Bacground Color Lightest (White): #fff;
+
+ */
+
+/* Global Styles */
+body {
+	font-family: "Noto Sans", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #19221d;
+	background-color: #eee;
+}
+header,
+main,
+footer {
+	padding: 2em;
+}
+main {
+	background-color: #fff;
+}
+/* Heading Styles */
+h1 {
+	font-size: 2.5em;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+/* Link and Buttons Styles */
+a {
+	color: #4a6658;
+	font-weight: 500;
+	text-decoration: none;
+	border-bottom: 1px solid;
+	border-color: rgba(74, 102, 88, 0.5);
+}
+
+a:visited {
+	/* visited link */
+	color: #05676e;
+}
+
+a:hover,
+a:focus {
+	color: rgba(148, 107, 0, 1);
+	border-color: rgba(148, 107, 0, 1);
+}
+
+a:focus {
+	outline: 2px solid #7baa93;
+}
+
+a:active {
+	color: #489c79;
+}
+
+button,
+.form__input--submit {
+	color: #fff;
+	font-family: inherit;
+	text-decoration: none;
+	font-weight: 600;
+	padding: 10px;
+	background-color: #4a6658;
+	border: none;
+	border-radius: 3px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+button:hover,
+button:focus,
+.form__input--submit:hover,
+.form__input--submit:focus {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+button:focus,
+.form__input--submit:focus {
+	outline: 2px solid #7baa93;
+}
+
+button:active,
+.form__input--submit:active {
+	opacity: 0.6;
+}
+/*
+Colors used
+
+Text Color (Dark Green): #19221D;
+Primary Color (Light green): #7BAA93;
+Primary Color Dark (Green): #4a6658;
+Secondary Color (Warm yellow): #F7B200;
+Secondary Color Dark (Brownish): #946B00;
+Bacground Color (Lightest Grey): #eee;
+Bacground Color Lightest (White): #fff;
+
+ */
+.button__secondary {
+	background-color: #f7b200;
+	color: #19221d;
+	font-weight: 600;
+}
+
+/* Navigation Styles */
+.navigation-list__item--active {
+	text-decoration: none;
+}
