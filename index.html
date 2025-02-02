@@ -14,12 +14,14 @@
 </head>
 
 <body>
-    <header>
-        <h1>
-            <a href="index.html">Nico Vece</a>
+    <header class="page-header">
+        <h1 class="page-header__item">
+            <a href="index.html" class="page-header__logo">
+                <img src="img/nico_vece-logo.svg" alt="Nico Vece logo - Monochromatic name lettering">
+            </a>
         </h1>
         <!-- Main navigation -->
-        <nav aria-labelledby="main-navigation">
+        <nav class="main-navigation page-header__item" aria-labelledby="main-navigation">
             <ul role="menubar" class="navigation-list">
                 <li role="presentation">
                     <a href="index.html" role="menuitem"
@@ -40,15 +42,14 @@
     </header>
     <main>
         <section class="profile">
-            <div>
-                <!-- Lisa's portrait -->
-                <img src="./img/home_portrait--square.png" class="profile__portrait" alt="" />
-            </div>
+            <!-- Lisa's portrait -->
+            <img src="./img/home_portrait--square.png" class="profile__portrait" alt="" />
             <div>
                 <h2>Hello World!</h2>
                 <p><strong>Myname is Nico Vece.</strong><br>I am a <span>web</span> developer from Italy.</p>
                 <a href="#nogo">Cheack out some of my code.</a>
             </div>
+            <div class="clear"></div>
         </section>
         <!-- <div>
             <p>
@@ -61,22 +62,22 @@
     <footer class="page-footer">
         <h3>Find me on</h3>
         <!-- Secondary navigation -->
-        <nav aria-labelledby="socials-navigation">
+        <nav class="socials-navigation" aria-labelledby="socials-navigation">
             <ul role="menubar" class="social-media">
                 <li role="presentation">
-                    <a href="#" role="menuitem">
+                    <a href="#" role="menuitem" class="social-media__item">
                         <!-- Github logo -->
                         <img src="https://placehold.co/30x30" alt="Nico Vece on Github" />
                     </a>
                 </li>
                 <li role="presentation">
-                    <a href="#" role="menuitem">
+                    <a href="#" role="menuitem" class="social-media__item">
                         <!-- Twitter logo -->
                         <img src="img/twitter_icon.svg" alt="twitter">
                     </a>
                 </li>
                 <li role="presentation">
-                    <a href="#" role="menuitem">
+                    <a href="#" role="menuitem" class="social-media__item">
                         <!-- LinkedIn logo -->
                         <img src="https://placehold.co/30x30" alt="Nico Vece on LinkedIn" />
                     </a>
