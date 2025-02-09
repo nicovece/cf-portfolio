@@ -20,6 +20,24 @@ Bacground Color (Lightest Grey): #eee;
 Bacground Color Lightest (White): #fff;
  */
 
+:root {
+    --color--lightest: #fff;
+    --color__primary: #ea514e;
+    --color__primary--dark: #e32c26;
+    --color__primary--text: #2f1010;
+    --color__primary--text--medium: #5e201f;
+    --color__secondary: #f7b200;
+    --color__secondary--text: #946b00;
+    --color__tertiary: #7baa93;
+    --color__tertiary--dark: #4a6658;
+    --color__text: #130606;
+    --color__text--lightest: #fff;
+    --color__background: #eee;
+    --color__background--lightest: #fff;
+
+    --font__weight--bold: 700;
+}
+
 /* Box Model
 The box-sizing is already set by modern-normalize but I am setting it in my css file anyway to respect the task assignment.
 */
@@ -33,8 +51,8 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    color: #2f1010;
-    background-color: #eee;
+    color: var(--color__primary--text);
+    background-color: var(--color__background);
 }
 header,
 footer {
@@ -42,7 +60,7 @@ footer {
 }
 main {
     padding: 4em 2em;
-    background-color: #fff;
+    background-color: var(--color__background--lightest);
 }
 header,
 main > *,
@@ -54,29 +72,27 @@ footer {
 /* Heading Styles */
 h1 {
     font-size: 2.5em;
-    font-weight: 700;
 }
 
 h2 {
     font-size: 2em;
-    font-weight: 700;
 }
 
 h3 {
     font-size: 1.5em;
-    font-weight: 700;
 }
 h1,
 h2,
 h3 {
     margin-top: 0;
     margin-bottom: 0.5em;
-    color: #ea514e;
+    color: var(--color__primary);
+    font-weight: var(--font__weight--bold);
 }
 h2.page__title {
     font-size: 1.5em;
     font-weight: normal;
-    color: #2f1010;
+    color: var(--color__primary--text);
 }
 
 table {
@@ -89,7 +105,7 @@ svg * {
 
 /* Link and Buttons Styles */
 a {
-    color: #2f1010;
+    color: var(--color__primary--text);
     font-weight: 500;
     text-decoration: none;
     border-bottom: 2px solid;
@@ -99,33 +115,33 @@ a {
 
 a:visited {
     /* visited link */
-    color: #5e201f;
+    color: var(--color__primary--text--medium);
 }
 
 a:hover,
 a:focus {
-    color: #5e201f;
-    border-color: rgba(234, 81, 78, 1);
+    color: var(--color__primary--text--medium);
+    border-color: rgb(234, 81, 78);
 }
 
 a:focus {
-    outline: 2px solid #ea514e;
+    outline: 2px solid var(--color__primary);
 }
 
 a:active {
-    color: #5e201f;
+    color: var(--color__primary--text--medium);
 }
 
 button,
 .button,
 a.button {
     display: inline-block;
-    color: #fff;
+    color: var(--color__text--lightest);
     font-family: inherit;
     text-decoration: none;
     font-weight: 600;
     padding: 10px;
-    background-color: #e32c26;
+    background-color: var(--color__primary--dark);
     border: none;
     border-radius: 3px;
     border: 2px solid transparent;
@@ -147,7 +163,7 @@ button:focus,
 
 button:focus,
 .button:focus {
-    outline: 2px solid #7baa93;
+    outline: 2px solid var(--color__tertiary);
 }
 
 button:active,
@@ -156,8 +172,8 @@ button:active,
 }
 
 .button__secondary {
-    background-color: #f7b200;
-    color: #130606;
+    background-color: var(--color__secondary);
+    color: --color__text;
     font-weight: 600;
 }
 
@@ -391,13 +407,13 @@ button:active,
 }
 @keyframes cloud-fill {
     0% {
-        fill: #fff;
+        fill: var(--color--lightest);
     }
     20% {
         fill: #fcc1a1;
     }
     40% {
-        fill: #fff;
+        fill: var(--color--lightest);
     }
 }
 
@@ -443,17 +459,14 @@ button:active,
     /* Heading Styles */
     h1 {
         font-size: 2em;
-        font-weight: 700;
     }
 
     h2 {
         font-size: 1.5em;
-        font-weight: 700;
     }
 
     h3 {
         font-size: 1em;
-        font-weight: 700;
     }
     .projects {
         grid-template-columns: 1fr;
@@ -461,24 +474,21 @@ button:active,
     .projects__item.projects__item--spotlight {
         grid-column: auto / auto;
         grid-row: auto / auto;
-        border-color: #ea514e;
+        border-color: var(--color__primary);
     }
 }
 @media all and (min-width: 500px) and (max-width: 900px) {
     /* Heading Styles */
     h1 {
         font-size: 2.25em;
-        font-weight: 700;
     }
 
     h2 {
         font-size: 1.75em;
-        font-weight: 700;
     }
 
     h3 {
         font-size: 1.25em;
-        font-weight: 700;
     }
     .projects {
         grid-template-columns: 1fr 1fr;
