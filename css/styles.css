@@ -1,46 +1,25 @@
-/*
-I need to investigate further if using @import is better than the link tag in the html file. For sure it is better for maintainability and organization.
-*/
-@import "./modern-normalize.css";
+@import url("./modern-normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-/*
-Colors used
-
-Primary Color (Light red): #EA514E;
-Primary Color small sizes contrast with white text (Dark red): #e32c26;
-Primary Color Text (Dark red): #2f1010;
-Primary Color Text medium (Dark red): #5E201F;
-Secondary Color (Warm yellow): #F7B200;
-Secondary Color Text (Brownish): #946B00;
-Tertiary Color (Light green): #7BAA93;
-Tertiary Color dark (Green): #4a6658;
-Text Color (Dark red): #130606;
-Bacground Color (Lightest Grey): #eee;
-Bacground Color Lightest (White): #fff;
- */
-
 :root {
-    --color--lightest: #fff;
-    --color__primary: #ea514e;
-    --color__primary--dark: #e32c26;
-    --color__primary--text: #2f1010;
-    --color__primary--text--medium: #5e201f;
-    --color__secondary: #f7b200;
-    --color__secondary--text: #946b00;
-    --color__tertiary: #7baa93;
-    --color__tertiary--dark: #4a6658;
-    --color__text: #130606;
-    --color__text--lightest: #fff;
-    --color__background: #eee;
-    --color__background--lightest: #fff;
-
-    --font__weight--bold: 700;
+    --boo-bar: 0;
+    --foo-bar: 0;
+    --color-lightest: #fff;
+    --color-primary: #ea514e;
+    --color-primary-dark: #e32c26;
+    --color-primary-text: #2f1010;
+    --color-primary-text-medium: #5e201f;
+    --color-secondary: #f7b200;
+    --color-secondary-text: #946b00;
+    --color-tertiary: #7baa93;
+    --color-tertiary-dark: #4a6658;
+    --color-text: #130606;
+    --color-text-lightest: #fff;
+    --color-background: #eee;
+    --color-background-lightest: #fff;
+    --font-weight-bold: 700;
 }
 
-/* Box Model
-The box-sizing is already set by modern-normalize but I am setting it in my css file anyway to respect the task assignment.
-*/
 * {
     box-sizing: border-box;
 }
@@ -51,17 +30,20 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    color: var(--color__primary--text);
-    background-color: var(--color__background);
+    color: var(--color-primary-text);
+    background-color: var(--color-background);
 }
+
 header,
 footer {
     padding: 2em;
 }
+
 main {
     padding: 4em 2em;
-    background-color: var(--color__background--lightest);
+    background-color: var(--color-background-lightest);
 }
+
 header,
 main > *,
 footer {
@@ -69,6 +51,7 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 /* Heading Styles */
 h1 {
     font-size: 2.5em;
@@ -81,18 +64,20 @@ h2 {
 h3 {
     font-size: 1.5em;
 }
+
 h1,
 h2,
 h3 {
     margin-top: 0;
     margin-bottom: 0.5em;
-    color: var(--color__primary);
-    font-weight: var(--font__weight--bold);
+    color: var(--color-primary);
+    font-weight: var(--font-weight-bold);
 }
+
 h2.page__title {
     font-size: 1.5em;
     font-weight: normal;
-    color: var(--color__primary--text);
+    color: var(--color-primary-text);
 }
 
 table {
@@ -105,47 +90,46 @@ svg * {
 
 /* Link and Buttons Styles */
 a {
-    color: var(--color__primary--text);
+    color: var(--color-primary-text);
     font-weight: 500;
     text-decoration: none;
     border-bottom: 2px solid;
-    border-color: rgba(234, 81, 78, 0.35);
+    border-color: #ea514e59;
     transition: border-color 0.3s;
 }
 
 a:visited {
     /* visited link */
-    color: var(--color__primary--text--medium);
+    color: var(--color-primary-text-medium);
 }
 
 a:hover,
 a:focus {
-    color: var(--color__primary--text--medium);
-    border-color: rgb(234, 81, 78);
+    color: var(--color-primary-text-medium);
+    border-color: #ea514e;
 }
 
 a:focus {
-    outline: 2px solid var(--color__primary);
+    outline: 2px solid var(--color-primary);
 }
 
 a:active {
-    color: var(--color__primary--text--medium);
+    color: var(--color-primary-text-medium);
 }
 
 button,
 .button,
 a.button {
     display: inline-block;
-    color: var(--color__text--lightest);
+    color: var(--color-text-lightest);
     font-family: inherit;
     text-decoration: none;
     font-weight: 600;
     padding: 10px;
-    background-color: var(--color__primary--dark);
-    border: none;
+    background-color: var(--color-primary-dark);
     border-radius: 3px;
     border: 2px solid transparent;
-    border-bottom-color: rgba(0, 0, 0, 0.3);
+    border-bottom-color: #0000004d;
     transform: scale(1);
     transition:
         opacity 0.3s,
@@ -163,7 +147,7 @@ button:focus,
 
 button:focus,
 .button:focus {
-    outline: 2px solid var(--color__tertiary);
+    outline: 2px solid var(--color-tertiary);
 }
 
 button:active,
@@ -172,8 +156,8 @@ button:active,
 }
 
 .button__secondary {
-    background-color: var(--color__secondary);
-    color: --color__text;
+    background-color: var(--color-secondary);
+    color: var(--color-text);
     font-weight: 600;
 }
 
@@ -193,6 +177,7 @@ button:active,
     flex-grow: 1;
     text-align: right;
 }
+
 .page-header__logo {
     border: none;
 }
@@ -205,12 +190,14 @@ button:active,
 .navigation-list li {
     display: inline-block;
 }
+
 .navigation-list__item {
     display: inline-block;
     padding: 0.25em 1em;
     position: relative;
     border: none;
 }
+
 .navigation-list__item::before,
 .navigation-list__item::after {
     content: "";
@@ -228,11 +215,13 @@ button:active,
         opacity 0.3s,
         transform 0.5s;
 }
+
 .navigation-list__item::before {
     left: 50%;
     transform: translateY(-50%) rotate(-145deg);
     border-color: transparent transparent red red;
 }
+
 .navigation-list__item::after {
     right: 50%;
     transform: translateY(-50%) rotate(-145deg);
@@ -254,6 +243,7 @@ button:active,
     transform: translateY(-50%) rotate(45deg);
     opacity: 1;
 }
+
 .navigation-list__item--active {
     border-color: transparent;
     text-decoration: none;
@@ -286,15 +276,17 @@ button:active,
 .about__content table {
     margin: 2rem auto;
 }
-.main_illustration {
+
+.main__illustration {
     margin-top: 4rem;
 }
-.main_illustration #sun {
+
+.main__illustration #sun {
     animation: 4s color-change infinite alternate linear;
     transform-origin: center;
 }
 
-.main_illustration #sun__rays {
+.main__illustration #sun__rays {
     animation: 36s spin infinite normal linear;
     transform-origin: center;
 }
@@ -319,10 +311,12 @@ button:active,
 #tor {
     animation: 4s opacity infinite alternate linear;
 }
+
 #turm {
     animation: 4s opacity infinite alternate linear;
     animation-delay: 1s;
 }
+
 #reichstag {
     animation: 4s opacity infinite alternate linear;
     animation-delay: 1s;
@@ -335,31 +329,38 @@ button:active,
     flex-direction: column;
     text-align: center;
 }
+
 .socials-navigation {
     display: flex;
     justify-content: center;
 }
+
 .social-media {
     display: flex;
     gap: 1.5em;
     list-style-type: none;
     padding-left: 0;
 }
+
 .social-media__item {
     display: inline-block;
     border-bottom: none;
 }
+
 .social-media__item img {
     display: block;
 }
+
 /* Portfolio grid */
 .projects__item {
     display: inline-block;
     width: 33%;
 }
+
 .projects {
     margin: 0 auto;
 }
+
 @supports (display: grid) {
     .projects {
         display: grid;
@@ -367,6 +368,7 @@ button:active,
         grid-template-rows: auto;
         grid-gap: 3rem;
     }
+
     .projects__item {
         background-color: lightgray;
         width: auto;
@@ -374,6 +376,7 @@ button:active,
         margin: 0;
         padding: 2em;
     }
+
     .projects__item.projects__item--spotlight {
         grid-column: 1 / 3;
         grid-row: 1 / 3;
@@ -391,6 +394,7 @@ button:active,
         transform: scale(1);
         fill: #edc655;
     }
+
     to {
         transform: scale(1.2);
         fill: #f76414;
@@ -401,19 +405,22 @@ button:active,
     from {
         transform: translate(0, 50px);
     }
+
     to {
         transform: translate(200px, 50px);
     }
 }
 @keyframes cloud-fill {
     0% {
-        fill: var(--color--lightest);
+        fill: var(--color-lightest);
     }
+
     20% {
         fill: #fcc1a1;
     }
+
     40% {
-        fill: var(--color--lightest);
+        fill: var(--color-lightest);
     }
 }
 
@@ -421,6 +428,7 @@ button:active,
     from {
         transform: translate(446px, 48px);
     }
+
     to {
         transform: translate(100px, 48px);
     }
@@ -430,6 +438,7 @@ button:active,
     from {
         transform: rotate(0);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -439,6 +448,7 @@ button:active,
     from {
         opacity: 1;
     }
+
     to {
         opacity: 0.75;
     }
@@ -448,6 +458,7 @@ button:active,
     from {
         transform: scale(0.8);
     }
+
     to {
         transform: scale(1);
     }
@@ -468,13 +479,15 @@ button:active,
     h3 {
         font-size: 1em;
     }
+
     .projects {
         grid-template-columns: 1fr;
     }
+
     .projects__item.projects__item--spotlight {
         grid-column: auto / auto;
         grid-row: auto / auto;
-        border-color: var(--color__primary);
+        border-color: var(--color-primary);
     }
 }
 @media all and (min-width: 500px) and (max-width: 900px) {
