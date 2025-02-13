@@ -224,7 +224,7 @@ button:active,
 }
 
 .navigation-list__item {
-    display: inline-block;
+    display: block;
     padding: 0.25em 1em;
     position: relative;
     border: none;
