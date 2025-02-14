@@ -47,7 +47,7 @@ main {
 header,
 main > *,
 footer {
-    min-width: 320px;
+    min-width: 280px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -530,7 +530,7 @@ button:active,
 }
 @media all and (max-width: 900px) {
     .projects {
-        grid-gap: 10px;
+        grid-gap: 2rem;
     }
     h1 {
         font-size: 22px;
