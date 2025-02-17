@@ -26,6 +26,9 @@
 
 /* Global Styles */
 body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     font-family: "Noto Sans", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -40,6 +43,7 @@ footer {
 }
 
 main {
+    flex-grow: 2;
     padding: 4em 2em;
     background-color: var(--color-background-lightest);
 }
@@ -267,6 +271,7 @@ button:active,
     justify-content: center;
     flex-direction: column;
     gap: 2rem;
+    height: 100%;
     text-align: center;
     max-width: 700px;
     margin: 0 auto;
