@@ -58,12 +58,14 @@
       <form id="contact_form" action="post" method="post" class="form">
         <div class="form__field form__field--text">
           <label class="form__label" for="name">Name</label><br>
-          <input class="form__input form__input--text" type="text" name="name" id="name" required>
+          <!-- <input class="form__input form__input--text" type="text" name="name" id="name" required> -->
+          <input class="form__input form__input--text" type="text" name="name" id="name">
         </div>
         <div class="form__field form__field--email">
           <label class="form__label" for="email">Email</label><br>
-          <input class="form__input form__input--email" type="email" name="email" id="email"
-            pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Please provide a valid email address" required>
+          <!-- <input class="form__input form__input--email" type="email" name="email" id="email"
+            pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Please provide a valid email address" required> -->
+          <input class="form__input form__input--email" type="email" name="email" id="email">
         </div>
         <div class="form__field form__field--tel">
           <label class="form__label" for="phone">Phone</label><br>
@@ -81,8 +83,10 @@
         </div>
         <div class="form__field form__field--textarea">
           <label class="form__label" for="message">Message</label><br>
+          <!-- <textarea class="form__input form__input--textarea" id="message" name="message" maxlength="240" rows="5"
+            cols="33" required></textarea> -->
           <textarea class="form__input form__input--textarea" id="message" name="message" maxlength="240" rows="5"
-            cols="33" required></textarea>
+            cols="33"></textarea>
         </div>
         <div class="form__field form__field--submit">
           <input class="form__input form__input--submit button" type="submit" value="Send me a message">
@@ -120,6 +124,7 @@
     </nav>
   </footer>
   <!-- <script src="js/tota11y.min.js"></script> -->
+  <script src="js/scripts.js" type="application/javascript"></script>
 </body>
 
 </html>
