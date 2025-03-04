@@ -1,4 +1,4 @@
-(function () {
+let validation = (function () {
   let form = document.querySelector("#contact_form");
   let emailInput = document.querySelector("#email");
   let messageInput = document.querySelector("#message");
@@ -27,20 +27,24 @@
 
     if (!value) {
       showErrorMessage(emailInput, "Email is a required field.");
+      emailInput.parentElement.classList.add("error");
       return false;
     }
 
     if (value.indexOf("@") === -1) {
       showErrorMessage(emailInput, "You must enter a valid email address.");
+      emailInput.parentElement.classList.add("error");
       return false;
     }
 
     if (value.indexOf(".") === -1) {
       showErrorMessage(emailInput, "You must enter a valid email address.");
+      emailInput.parentElement.classList.add("error");
       return false;
     }
 
     showErrorMessage(emailInput, null);
+    emailInput.parentElement.classList.remove("error");
     return true;
   }
 
@@ -49,10 +53,12 @@
 
     if (!value) {
       showErrorMessage(topicInput, "Topic is a required field.");
+      topicInput.parentElement.classList.add("error");
       return false;
     }
 
     showErrorMessage(topicInput, null);
+    topicInput.parentElement.classList.remove("error");
     return true;
   }
 
@@ -61,6 +67,7 @@
 
     if (!value) {
       showErrorMessage(messageInput, "message is a required field.");
+      messageInput.parentElement.classList.add("error");
       return false;
     }
 
@@ -69,10 +76,12 @@
         messageInput,
         "The message needs to be at least 36 characters long.",
       );
+      messageInput.parentElement.classList.add("error");
       return false;
     }
 
     showErrorMessage(messageInput, null);
+    messageInput.parentElement.classList.remove("error");
     return true;
   }
 
@@ -95,5 +104,11 @@
   topicInput.addEventListener("input", validateTopic);
 
   // THE RETURN STATEMENT HERE
+  return {
+    validateEmail,
+    validatemessage,
+    validateTopic,
+    validateForm,
+  };
 })();
-console.log("Hello, World!");
+validation.validateForm();
