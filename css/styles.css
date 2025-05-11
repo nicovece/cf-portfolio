@@ -1,5 +1,5 @@
-@import url("./modern-normalize.css");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('./modern-normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --boo-bar: 0;
@@ -29,7 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
@@ -136,9 +136,7 @@ a.button {
   border: 2px solid transparent;
   border-bottom-color: #0000004d;
   transform: scale(1);
-  transition:
-    opacity 0.3s,
-    transform 0.5s;
+  transition: opacity 0.3s, transform 0.5s;
 }
 
 button:hover,
@@ -222,7 +220,7 @@ button:active,
 .navigation-list__item::after,
 .navigation-list__item--active::before,
 .navigation-list__item--active::after {
-  content: "";
+  content: '';
   display: inline-block;
   width: 1rem;
   height: 1rem;
@@ -232,11 +230,7 @@ button:active,
   border: 2px solid transparent;
   opacity: 0;
   z-index: -1;
-  transition:
-    right 0.3s,
-    left 0.3s,
-    opacity 0.3s,
-    transform 0.5s;
+  transition: right 0.3s, left 0.3s, opacity 0.3s, transform 0.5s;
 }
 
 .navigation-list__item::before {
@@ -421,7 +415,7 @@ button:active,
   }
 
   .projects__item {
-    background-color: lightgray;
+    background-color: var(--color-background);
     width: auto;
     min-height: auto;
     margin: 0;
@@ -430,9 +424,74 @@ button:active,
 
   .projects__item.projects__item--spotlight {
     grid-column: 1 / 3;
-    grid-row: 1 / 3;
+    grid-row: 1 / 2;
     border: 2px solid transparent;
   }
+}
+
+/* Project Detail Styles */
+.project {
+  border-top: 1px solid var(--color-primary);
+  padding: 3rem 0;
+}
+
+.project__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.project__body > * {
+  max-width: min(900px, 100%);
+  margin: 0;
+}
+@media all and (min-width: 768px) and (max-width: 1200px) {
+  .project__body > * {
+    max-width: 75%;
+  }
+}
+
+.project__body > h2 {
+  margin-bottom: 0.2em;
+}
+
+.project__body > h3 {
+  margin-bottom: 2em;
+}
+
+.project__body > h4 {
+  margin-bottom: 1em;
+}
+
+.project__body > p,
+.project__body > ul {
+  margin-bottom: 1em;
+}
+
+.project__body > p + h4,
+.project__body > ul + h4 {
+  margin-top: 2em;
+}
+
+.project__body > hr {
+  margin: 2em 0;
+  border: 0;
+  border-top: 1px solid var(--color-primary);
+}
+
+.project__body > ul {
+  padding-left: 1em;
+  list-style-type: circle;
+}
+
+.project__body > ul > li {
+  margin-bottom: 0.75em;
+}
+
+.project__body > img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 3em auto;
 }
 
 /* Form Styles */
@@ -460,7 +519,7 @@ select {
   font-size: 1.125rem;
 }
 
-.form__field input[type="submit"] {
+.form__field input[type='submit'] {
   padding: 1em 1.5em;
   background-color: var(--color-primary-dark);
   color: var(--color-text-lightest);
@@ -469,7 +528,7 @@ select {
   border: none;
 }
 
-.form__field input:not([type="submit"]),
+.form__field input:not([type='submit']),
 .form__field textarea,
 select {
   width: 100%;
@@ -480,7 +539,7 @@ select {
   background-color: rgba(227, 44, 38, 0.075);
 }
 
-.form__field.error input:not([type="submit"]),
+.form__field.error input:not([type='submit']),
 .form__field.error textarea,
 .form__field.error select {
   border-color: var(--color-primary);

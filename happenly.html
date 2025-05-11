@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nico Vece, Web Developer Portfolio">
+  <link rel="shortcut icon" href="./img/favicon-32x32.png?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" type="text/css" href="css/styles.production.min.css">
+  <title>Nico Vece - Web Developer</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <h1 class="page-header__item">
+      <a href="index.html" class="page-header__logo">
+        <img src="img/nico_vece-logo.svg" alt="Nico Vece logo - Monochromatic name lettering">
+      </a>
+    </h1>
+    <!-- Main navigation -->
+    <nav class="main-navigation page-header__item" aria-label="main-navigation">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" aria-label="Link to About me page" role="menuitem"
+            class="navigation-list__item">About</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2 class="page__title">Work / Happenly</h2>
+    <section class="project">
+      <div class="project__body">
+        <h2>Happenly</h2>
+        <h3>Discover, Track & Visualize Events That Matter</h3>
+        <p>
+          <a href="https://itshappenly.vercel.app/" class="button__secondary_outline" target="_blank">Try Happenly
+            live</a>
+        </p>
+        <p> <a href="https://github.com/nicovece/happenly" class="button__secondary_outline" target="_blank">See
+            project on GitHub</a>
+        </p>
+        <img src="./img/happenly-screenshot-wide.png" alt="Happenly screenshot">
+        <h4>Project Overview</h4>
+        <p>Happenly is a feature-rich, modern web application built to streamline the process of discovering,
+          tracking, and visualizing events. Designed with user experience and accessibility in mind, Happenly
+          empowers users to find relevant events in their city, customize how information is displayed, and
+          gain insights through interactive analytics. The application is fully responsive, installable as a
+          Progressive Web App (PWA), and supports offline usage, ensuring a seamless experience across devices
+          and network conditions.</p>
+        <h4>Objective</h4>
+        <p>The primary goal of Happenly is to provide users with a smart, intuitive event companion that adapts
+          to their preferences and needs. By combining robust filtering, real-time data visualization, and
+          offline capabilities, the app aims to make event discovery both efficient and enjoyable. This
+          project also demonstrates my ability to deliver production-ready, scalable solutions using modern
+          web technologies and best practices.</p>
+        <h4>Key Features</h4>
+        <ul>
+          <li><strong>City-Based Event Filtering:</strong> Users can search for events by city, receive
+            real-time suggestions, and even select multiple cities to broaden their search.</li>
+          <li><strong>Customizable Event Listings:</strong> Control how many events are displayed and toggle
+            the level of detail for each event, enhancing usability and personalization.</li>
+          <li><strong>Offline Functionality:</strong> Leveraging service workers and caching, users can access
+            previously loaded events even without an internet connection.</li>
+          <li><strong>Progressive Web App (PWA):</strong> Happenly can be installed on any device for one-tap
+            access, with support for home screen shortcuts and a native app-like experience.</li>
+          <li><strong>Interactive Data Visualization:</strong> Integrated charts and analytics help users
+            understand event trends and make informed decisions.</li>
+          <li><strong>Accessibility:</strong> Full keyboard navigation and screen reader support ensure the
+            app is usable by everyone.</li>
+          <li><strong>Robust Testing:</strong> Comprehensive unit, integration, and end-to-end tests ensure
+            reliability and maintainability.</li>
+        </ul>
+        <h4>Technologies Used</h4>
+        <ul>
+          <li><strong>Frontend:</strong> React (with modern hooks and functional components), Vite (for fast
+            development and optimized builds), SCSS for modular styling, and Recharts for data
+            visualization.</li>
+          <li><strong>PWA &amp; Offline:</strong> Vite PWA plugin, Workbox for service worker management and
+            offline caching.</li>
+          <li><strong>Testing:</strong> Jest, React Testing Library, Puppeteer for end-to-end testing, and
+            Jest-Cucumber for behavior-driven development.</li>
+          <li><strong>Code Quality:</strong> ESLint and Prettier for consistent code style and error
+            prevention.</li>
+          <li><strong>Backend/Auth:</strong> Node.js (serverless architecture), Google APIs for secure
+            authentication.</li>
+          <li><strong>Other:</strong> Modern JavaScript (ES6+), responsive design principles, and
+            accessibility best practices.</li>
+        </ul>
+        <h4>What This Project Demonstrates</h4>
+        <p>Happenly showcases my ability to architect and deliver a full-stack, production-ready application
+          using the latest web technologies. It highlights my focus on user experience, accessibility,
+          performance, and code quality—skills that I am eager to bring to a forward-thinking development
+          team.</p>
+        <hr>
+        <p>
+          <a href="https://itshappenly.vercel.app/" class="button__secondary_outline" target="_blank">Try Happenly
+            live</a>
+        </p>
+        <p> <a href="https://github.com/nicovece/happenly" class="button__secondary_outline" target="_blank">See
+            project on GitHub</a>
+        </p>
+      </div>
+      <!-- <div class="projects__item">
+                <h2>Mobile web app</h2>
+                <p>
+                    Within this project, I was responsible for the frontend.
+                    It’s written in React.js. Additionally, I've created the
+                    HTML and CSS templates.
+                </p>
+                <a href="#">See project on GitHub</a>
+            </div> -->
+    </section>
+  </main>
+  <footer class="page-footer">
+    <h3>Find me on</h3>
+    <!-- Secondary navigation -->
+    <nav class="socials-navigation" aria-label="socials-navigation">
+      <ul role="menubar" class="social-media">
+        <li role="presentation">
+          <a href="#" role="menuitem" class="social-media__item">
+            <!-- Github logo -->
+            <img src="img/twitter_icon.svg" alt="Nico Vece on Github">
+          </a>
+        </li>
+        <li role="presentation">
+          <a href="#" role="menuitem" class="social-media__item">
+            <!-- Twitter logo -->
+            <img src="img/twitter_icon.svg" alt="twitter">
+          </a>
+        </li>
+        <li role="presentation">
+          <a href="#" role="menuitem" class="social-media__item">
+            <!-- LinkedIn logo -->
+            <img src="img/twitter_icon.svg" alt="Nico Vece on LinkedIn">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+  <!-- <script src="js/tota11y.min.js"></script> -->
+</body>
+
+</html>
