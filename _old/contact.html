@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<<<<<<< HEAD
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nico Vece, Web Developer Portfolio">
+  <link rel="shortcut icon" href="./img/favicon-32x32.png?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" type="text/css" href="css/styles.production.min.css">
+  <title>Contact Nico Vece - Web Developer</title>
+=======
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nico Vece, Web Developer Portfolio" />
+  <link rel="shortcut icon" href="./img/favicon-32x32.png?v=2" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
+  <title>Nico Vece - Web Developer</title>
+>>>>>>> origin/cf-intro-to-frontend
+</head>
+
+<body>
+  <header class="page-header">
+    <h1 class="page-header__item">
+      <a href="index.html" class="page-header__logo">
+        <img src="img/nico_vece-logo.svg" alt="Nico Vece logo - Monochromatic name lettering">
+      </a>
+    </h1>
+    <!-- Main navigation -->
+<<<<<<< HEAD
+    <nav class="main-navigation page-header__item" aria-label="main-navigation">
+=======
+    <nav class="main-navigation page-header__item" aria-labelledby="main-navigation">
+>>>>>>> origin/cf-intro-to-frontend
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" aria-label="Link to About me page" role="menuitem"
+            class="navigation-list__item">About</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div>
+      <h2 class="page__title">About me</h2>
+      <h2>Nico Vece</h2>
+      <p>
+        CareerFoundry GmbH<br>
+        Lohmühlenstraße 65<br>
+        12435 Berlin<br>
+        Deutschland<br>
+      </p>
+      <p>
+<<<<<<< HEAD
+        Tel <a href="tel:+490123456789" aria-label="Link my phone at +49 01 2345 6789">+49 01 2345
+=======
+        Tel <a href="tel:+49 01 2345 6789" aria-label="Link my phone at +49 01 2345 6789">+49 01 2345
+>>>>>>> origin/cf-intro-to-frontend
+          6789</a><br>
+        Skype <a href="skype:lisa.gringl.developer">lisa.gringl.developer</a><br>
+        <a href="mailto:lisa@gringldeveloper.com">lisa (at) gringldeveloper (dot) com</a>
+      </p>
+<<<<<<< HEAD
+      <form id="contact_form" action="post" method="post" class="form">
+        <div class="form__field form__field--text">
+          <label class="form__label" for="name">Name</label><br>
+          <!-- <input class="form__input form__input--text" type="text" name="name" id="name" required> -->
+          <input class="form__input form__input--text" type="text" name="name" id="name">
+        </div>
+        <div class="form__field form__field--email">
+          <label class="form__label" for="email">Email</label><br>
+          <!-- <input class="form__input form__input--email" type="email" name="email" id="email"
+            pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Please provide a valid email address" required> -->
+          <input class="form__input form__input--email" type="email" name="email" id="email">
+        </div>
+        <div class="form__field form__field--tel">
+          <label class="form__label" for="phone">Phone</label><br>
+          <input class="form__input form__input--tel" type="tel" id="phone" name="phone">
+=======
+      <form id="contact_form" action="" method="post" class="form">
+        <div class="form__field form__field--text">
+          <label class="form__label" for="name">Name</label><br>
+          <input class="form__input form__input--text" type="text" name="name" id="name" required />
+        </div>
+        <div class="form__field form__field--email">
+          <label class="form__label" for="email">Email</label><br>
+          <input class="form__input form__input--email" type="email" name="email" id="email"
+            pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Please provide a valid email address" required />
+        </div>
+        <div class="form__field form__field--tel">
+          <label class="form__label" for="phone">Phone</label><br>
+          <input class="form__input form__input--tel" type="tel" id="phone" name="phone" />
+>>>>>>> origin/cf-intro-to-frontend
+        </div>
+        <div class="form__field form__field--select">
+          <label class="form__label" for="topic">Topic</label><br>
+          <select class="form__input form__input--select" name="topic" id="topic">
+            <option value="">Please select a topic</option>
+            <option value="hire">I want to hire you</option>
+            <option value="info">I would love to know more about you</option>
+            <option value="meeting">I would arrange a meeting</option>
+            <option value="hi">Just want to say HI!</option>
+          </select>
+        </div>
+        <div class="form__field form__field--textarea">
+          <label class="form__label" for="message">Message</label><br>
+<<<<<<< HEAD
+          <!-- <textarea class="form__input form__input--textarea" id="message" name="message" maxlength="240" rows="5"
+            cols="33" required></textarea> -->
+          <textarea class="form__input form__input--textarea" id="message" name="message" maxlength="240" rows="5"
+            cols="33"></textarea>
+        </div>
+        <div class="form__field form__field--submit">
+          <input class="form__input form__input--submit button" type="submit" value="Send me a message">
+=======
+          <textarea class="form__input form__input--textarea" id="message" name="message" maxlength="240" rows="5"
+            cols="33" required></textarea>
+        </div>
+        <div class="form__field form__field--submit">
+          <input class="form__input form__input--submit button" type="submit" value="Send me a message" />
+>>>>>>> origin/cf-intro-to-frontend
+        </div>
+      </form>
+      <p>
+        <a href="mailto:lisa@gringldeveloper.com">Contact me</a>
+      </p>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <h3>Find me on</h3>
+    <!-- Secondary navigation -->
+<<<<<<< HEAD
+    <nav class="socials-navigation" aria-label="socials-navigation">
+=======
+    <nav class="socials-navigation" aria-labelledby="socials-navigation">
+>>>>>>> origin/cf-intro-to-frontend
+      <ul role="menubar" class="social-media">
+        <li role="presentation">
+          <a href="#" role="menuitem" class="social-media__item">
+            <!-- Github logo -->
+<<<<<<< HEAD
+            <img src="img/twitter_icon.svg" alt="Nico Vece on Github">
+=======
+            <img src="https://placehold.co/30x30" alt="Nico Vece on Github" />
+>>>>>>> origin/cf-intro-to-frontend
+          </a>
+        </li>
+        <li role="presentation">
+          <a href="#" role="menuitem" class="social-media__item">
+            <!-- Twitter logo -->
+            <img src="img/twitter_icon.svg" alt="twitter">
+          </a>
+        </li>
+        <li role="presentation">
+          <a href="#" role="menuitem" class="social-media__item">
+            <!-- LinkedIn logo -->
+<<<<<<< HEAD
+            <img src="img/twitter_icon.svg" alt="Nico Vece on LinkedIn">
+=======
+            <img src="https://placehold.co/30x30" alt="Nico Vece on LinkedIn" />
+>>>>>>> origin/cf-intro-to-frontend
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+<<<<<<< HEAD
+  <!-- <script src="js/tota11y.min.js"></script> -->
+  <script src="js/scripts.js" type="application/javascript"></script>
+=======
+  <script src="js/tota11y.min.js"></script>
+>>>>>>> origin/cf-intro-to-frontend
+</body>
+
+</html>
