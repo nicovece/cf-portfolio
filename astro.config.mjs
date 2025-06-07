@@ -5,6 +5,8 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://nicovece.github.io/cf-portfolio-astro',
+  base: '/cf-portfolio-astro/',
+  trailingSlash: 'never',
   integrations: [mdx(), sitemap()],
 });

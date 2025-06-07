@@ -1,5 +1,5 @@
 ---
-title: 'F L I C K T I O N A R Y'
+title: 'Flicktionary'
 shortDescription: 'Modular Vanilla JS Pokédex'
 description: 'Flicktionary is a responsive, client-side web app built with vanilla JavaScript, HTML, and CSS, styled with Bootstrap. It fetches data from the PokéAPI in batches to support infinite scrolling, dynamically renders each Pokémon as an interactive entry, and uses modals for detailed views. The project is modular, performance-optimized, and includes polyfills for broader browser compatibility.'
 pubDate: 2025-05-02
